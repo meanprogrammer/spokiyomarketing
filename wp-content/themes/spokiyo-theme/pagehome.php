@@ -26,10 +26,17 @@ get_header(); ?>
 		        <br />
             <h1 class="home-h1">Work-Life Balanced</h1>
             <p class="home-intro">We assist in improving the quality of life of highly skilled individuals and the quality of work for clients by providing them an innovative platform that is easy to use</p>
-            <div class="button-group">
+            <!-- <div class="button-group">
                 <a href="#"><button class="gray-bg rounded" style="margin-right:10px;" type="button" data-toggle="modal" data-target="#videoModal">Watch Video</button></a>
                 <a href="#"><button class="default-bg rounded" type="button" data-toggle="modal" data-target="#signupModal">Sign Up Now</button></a>
-            </div>
+            </div> -->
+            <h3>Looking for</h3>
+           <!-- <div class="btn-group"> --> 
+			  <a class="btn btn-default btn-lg">Consultants</a>
+			  <a class="btn btn-default btn-lg">BPO Partner</a>
+			  <a class="btn btn-default btn-lg">Consulting Opportunity</a>
+		<!-- 	</div> -->
+		<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">Sign Up For Newsletter</a>
             <div class="hero-image">
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/banner-hero.png" />
             </div>

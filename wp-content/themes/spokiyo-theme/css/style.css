@@ -405,3 +405,4 @@ ul.sortable-list li {margin:0; padding:0;}
 .home-logo { position: relative; float: left;}
 
 .prevent-vscroll { overflow-y: hidden !important; }
+.home-button-container { text-align: center; }

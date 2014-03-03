@@ -30,13 +30,15 @@ get_header(); ?>
                 <a href="#"><button class="gray-bg rounded" style="margin-right:10px;" type="button" data-toggle="modal" data-target="#videoModal">Watch Video</button></a>
                 <a href="#"><button class="default-bg rounded" type="button" data-toggle="modal" data-target="#signupModal">Sign Up Now</button></a>
             </div> -->
-            <h3>Looking for</h3>
-           <!-- <div class="btn-group"> --> 
-			  <a class="btn btn-default btn-lg">Consultants</a>
-			  <a class="btn btn-default btn-lg">BPO Partner</a>
-			  <a class="btn btn-default btn-lg">Consulting Opportunity</a>
-		<!-- 	</div> -->
-		<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">Sign Up For Newsletter</a>
+            <div class="home-button-container">
+		            <h3>Looking for</h3>
+		           <!-- <div class="btn-group"> --> 
+					  <a class="btn btn-default btn-lg">Consultants</a>
+					  <a class="btn btn-default btn-lg">BPO Partner</a>
+					  <a class="btn btn-default btn-lg">Consulting Opportunity</a>
+				<!-- 	</div> -->
+				<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">Sign Up For Newsletter</a>
+			</div>
             <div class="hero-image">
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/banner-hero.png" />
             </div>

@@ -118,7 +118,7 @@ a {
 }
 
 a:visited {
-	color: #ac0404;
+	/*color: #ac0404;*/
 }
 
 a:focus {
@@ -141,7 +141,7 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+	/*clear: both;*/
 	line-height: 1.3;
 }
 

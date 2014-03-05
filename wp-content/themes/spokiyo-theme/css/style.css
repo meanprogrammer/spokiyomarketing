@@ -2,7 +2,7 @@
 body{background-color:#f6f6f6;}
 
 /*dashboard*/
-h4 {font-weight:600; margin:20px 20px 0; padding-bottom:15px; border-bottom:1px solid #ddd; color:#4c4c4c;}
+/*h4 {font-weight:600; margin:20px 20px 0; padding-bottom:15px; border-bottom:1px solid #ddd; color:#4c4c4c;}*/
 .quick-action-btns {margin:20px 20px 0 0;}
 
 /*---Home registration--*/
@@ -406,3 +406,6 @@ ul.sortable-list li {margin:0; padding:0;}
 
 .prevent-vscroll { overflow-y: hidden !important; }
 .home-button-container { text-align: center; }
+.contact-label { font-weight: 600; }
+#contactnametext,#organizationtext,#contactemailaddresstext,#contactphonenumber { width: 400px; }
+#consultingneedstext,#bponeedstext { width: 500px; }

@@ -37,8 +37,8 @@ get_header(); ?>
 					  <a class="btn btn-default btn-lg" id="bpopartnerlink">BPO Partner</a>
 					  <a class="btn btn-default btn-lg" id="consultingopplink">Consulting Opportunity</a>
 				<!-- 	</div> -->
-				<img class="img-responsive img-inline" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/vert-line.png" />
-				<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">Sign Up For Newsletter</a>
+				<img class="img-inline" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/vert-line.png" />
+				<a class="btn btn-primary btn-lg" id="signuplink">Sign Up For Newsletter</a>
 			</div>
             <div class="hero-image">
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/banner-hero.png" />
@@ -53,7 +53,7 @@ get_header(); ?>
         <h4 class="modal-title">Looking For Consultants</h4>
       </div>
       <div class="modal-body">
-        <?php echo do_shortcode("[contact-form-7 id=\"55\" title=\"Consulting-Needs-Form\"]")?>
+        <?php echo do_shortcode("[contact-form-7 id=\"32\" title=\"Consulting-Needs-Form\"]")?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -71,7 +71,7 @@ get_header(); ?>
         <h4 class="modal-title">Looking For BPO Partner</h4>
       </div>
       <div class="modal-body">
-        <?php echo do_shortcode("[contact-form-7 id=\"58\" title=\"BPO-Partner-Form\"]")?>
+        <?php echo do_shortcode("[contact-form-7 id=\"33\" title=\"BPO-Partner-Form\"]")?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -89,7 +89,25 @@ get_header(); ?>
         <h4 class="modal-title">Looking For Consulting Opportunity</h4>
       </div>
       <div class="modal-body">
-        <?php echo do_shortcode("[contact-form-7 id=\"60\" title=\"Consulting-Opportunity-Form\"]")?>
+        <?php echo do_shortcode("[contact-form-7 id=\"34\" title=\"Consulting-Opportunity-Form\"]")?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="subscribeModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Sign Up for Newsletter</h4>
+      </div>
+      <div class="modal-body">
+        <?php echo do_shortcode("[show-mailchimp-form formkey=\"MjcxMmMwMTEzZjk,\" version=\"inline\"]")?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -111,9 +129,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 <script type="text/javascript">
 <!--
-	function hello(){
-		alert("hello dude");
-	}
+
 
 	$(document).ready(function(){
 		$('#consultingopplink').click(function() {
@@ -151,6 +167,20 @@ get_header(); ?>
 			$('html').css('overflow-y', 'auto');
 			
 		});
+
+		$('#signuplink').click(function(){
+			$('html').css('overflow-y', 'hidden');
+			$('html').css('margin-right', '15px');
+			$('#subscribeModal').modal({keyboard:false});
+		});
+
+		$('#subscribeModal').on('hidden.bs.modal', function (e) {
+			$('html').css('margin-right', '0');
+			$('html').css('overflow-y', 'auto');
+			
+		});
+		
+		
 	});
 //-->
 </script>

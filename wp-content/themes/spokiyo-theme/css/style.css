@@ -409,5 +409,5 @@ ul.sortable-list li {margin:0; padding:0;}
 .home-button-container h4 { text-align: left; text-indent: 10px;margin-bottom: 10px; }
 .contact-label { font-weight: 600; }
 #contactnametext,#organizationtext,#contactemailaddresstext,#contactphonenumber { width: 400px; }
-#consultingneedstext,#bponeedstext { width: 500px; }
+#consultingneedstext,#bponeedstext,#yourmessagetext { width: 500px; }
 .img-inline { display: inline; margin: 0 10px 0 10px; }

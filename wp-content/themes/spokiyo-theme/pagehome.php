@@ -31,12 +31,13 @@ get_header(); ?>
                 <a href="#"><button class="default-bg rounded" type="button" data-toggle="modal" data-target="#signupModal">Sign Up Now</button></a>
             </div> -->
             <div class="home-button-container">
-		            <h3>Looking for</h3>
+		            <h4>Looking for</h4>
 		           <!-- <div class="btn-group"> --> 
 					  <a class="btn btn-default btn-lg" id="consultantslink">Consultants</a>
 					  <a class="btn btn-default btn-lg" id="bpopartnerlink">BPO Partner</a>
 					  <a class="btn btn-default btn-lg" id="consultingopplink">Consulting Opportunity</a>
 				<!-- 	</div> -->
+				<img class="img-responsive img-inline" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/vert-line.png" />
 				<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">Sign Up For Newsletter</a>
 			</div>
             <div class="hero-image">
@@ -108,7 +109,7 @@ get_header(); ?>
         </div>
      </div><!-- #content -->
 	</div><!-- #primary -->
-<<script type="text/javascript">
+<script type="text/javascript">
 <!--
 	function hello(){
 		alert("hello dude");

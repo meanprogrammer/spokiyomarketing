@@ -16,7 +16,7 @@ body{background-color:#f6f6f6;}
 
 .home-features {display:block; background:#009fe3; padding:0; text-align:left;}
 .home-features h2 {font-size:24px; font-weight:700; color:#fff; text-transform:uppercase;}
-.home-features p, .home-features a {margin-left:12%; color:#d3f2ff;}
+.home-features p, .home-features a {color:#d3f2ff;}
 .home-features a {color:#fff; text-transform:uppercase;}
 
 /*---header---*/
@@ -405,7 +405,9 @@ ul.sortable-list li {margin:0; padding:0;}
 .home-logo { position: relative; float: left;}
 
 .prevent-vscroll { overflow-y: hidden !important; }
-.home-button-container { text-align: center; }
+.home-button-container { text-align: center; margin: 0 auto; width: 780px;}
+.home-button-container h4 { text-align: left; text-indent: 10px;margin-bottom: 10px; }
 .contact-label { font-weight: 600; }
 #contactnametext,#organizationtext,#contactemailaddresstext,#contactphonenumber { width: 400px; }
 #consultingneedstext,#bponeedstext { width: 500px; }
+.img-inline { display: inline; margin: 0 10px 0 10px; }

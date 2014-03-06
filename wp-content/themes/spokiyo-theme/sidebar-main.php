@@ -15,23 +15,23 @@ if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<!-- <div class="widget-area"> -->
 			<!-- Added html block -->
 			<div class="home-features">
-            	<h2 class="center">Features</h2>
+            	<h2 class="center">Services</h2>
 	            <div class="container">
-		        	<div class="col-md-4">
-		            	<h2><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/feat-toms.jpg" class="img-responsive"></h2>
+		        	<div class="col-md-6">
+		            	<h2><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/toms-header.png" class="img-responsive"></h2>
 		            	<p>Engaging qualified professionals with consulting opportunities from clients. </p>
-		                <a class="read-more" href="#">Read more&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/icon-read-more.jpg"></a>
+		                <a class="read-more" href="talent-opportunity-matching/">Read more&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/icon-read-more.jpg"></a>
 		            </div>
-		        	<div class="col-md-4">
-		            	<h2><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/feat-fams.jpg" class="img-responsive"></h2>
+		        	<div class="col-md-6">
+		            	<h2><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/bpo-header.png" class="img-responsive"></h2>
 		            	<p>Providing credit cards, group medical insurance, old-age funds, &amp; more financial services. </p>
-		                <a class="read-more" href="#">Read more&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/icon-read-more.jpg"></a>
+		                <a class="read-more" href="business-process-outsourcing-matching/">Read more&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/icon-read-more.jpg"></a>
 		            </div>
-		        	<div class="col-md-4">
+		        	<!-- <div class="col-md-4">
 		            	<h2><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/feat-loyalty.jpg" class="img-responsive"></h2>
 		            	<p>The SPOKIYO loyalty programme is there to give Spokiyans special and useful extras.</p>
 		                <a class="read-more" href="#">Read more&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/icon-read-more.jpg"></a>
-		            </div>
+		            </div> -->
 	            </div>
         	</div>
         	<!-- END: Added html block -->

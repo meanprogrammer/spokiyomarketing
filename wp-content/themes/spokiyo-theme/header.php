@@ -50,13 +50,25 @@
 			</a>
 
 			<div id="navbar" class="navbar">
+				
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-					<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
-					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/home-logo.png" class="home-logo img-responsive">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-					<!-- Removed Search form here -->
-					<?php //get_search_form(); ?>
+					<div class="row">
+						<div class="col-md-2" style="padding-left:5px !important;padding-right:5px !important;">
+							<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
+							<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/home-logo.png" class="home-logo img-responsive">
+						</div>
+						<div class="col-md-8" style="padding-left:5px !important;padding-right:5px !important;">
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+							<!-- Removed Search form here -->
+							<?php //get_search_form(); ?>
+						</div>
+						<div>
+								<a href="https://facebook.com/spokiyo"><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/facebook-icon.png"></a>
+			            		<a href="http://www.linkedin.com/groups/SPOKIYO-4246125/about"><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/linkedin-icon.png"></a>
+			            		<a href="https://twitter.com/spokiyo"><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/twitter-icon.png"></a>
+		            	</div>
+					</div>
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->

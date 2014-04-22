@@ -21,7 +21,7 @@ get_header(); ?>
 ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content container" role="main">
 		        <div class="banner">
 		        <br />
             <h1 class="home-h1">Work-Life Balanced</h1>
@@ -30,18 +30,22 @@ get_header(); ?>
                 <a href="#"><button class="gray-bg rounded" style="margin-right:10px;" type="button" data-toggle="modal" data-target="#videoModal">Watch Video</button></a>
                 <a href="#"><button class="default-bg rounded" type="button" data-toggle="modal" data-target="#signupModal">Sign Up Now</button></a>
             </div> -->
-            <div class="home-button-container">
-		            <h4>Looking for</h4>
-		           <!-- <div class="btn-group"> --> 
-					  <a class="btn btn-default btn-lg" id="consultantslink">Consultants</a>
-					  <a class="btn btn-default btn-lg" id="bpopartnerlink">BPO Partner</a>
-					  <a class="btn btn-default btn-lg" id="consultingopplink">Consulting Opportunity</a>
-				<!-- 	</div> -->
-				<img class="img-inline" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/vert-line.png" />
-				<a class="btn btn-primary btn-lg" id="signuplink">Sign Up For Newsletter</a>
+
+           
+		    <div class="row" style="text-align: center; margin: 0 auto;">
+		    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					  	<a class="btn btn-default btn-lg" id="consultantslink">Consultants</a>
+						<a class="btn btn-default btn-lg" id="bpopartnerlink">BPO Partner</a>
+						<a class="btn btn-default btn-lg" id="consultingopplink">Consulting Opportunity</a>
+						<!--  <img class="img-responsive img-inline" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/vert-line.png" /> -->
+						<!--  <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">Sign Up For Newsletter</a>-->
+						<a class="btn btn-primary btn-lg" id="signuplink">Sign Up For Newsletter</a>
+				</div>		
 			</div>
-            <div class="hero-image">
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/banner-hero.png" />
+			<div class="row hero-image">
+	            <!-- <div class="hero-image"> -->
+	                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/banner-hero.png" />
+	            <!-- </div> -->
             </div>
         </div><!--end of banner-->
 
@@ -53,7 +57,7 @@ get_header(); ?>
         <h4 class="modal-title">Looking For Consultants</h4>
       </div>
       <div class="modal-body">
-        <?php echo do_shortcode("[contact-form-7 id=\"32\" title=\"Consulting-Needs-Form\"]")?>
+        <?php echo do_shortcode("[contact-form-7 id=\"55\" title=\"Consulting-Needs-Form\"]")?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -71,7 +75,7 @@ get_header(); ?>
         <h4 class="modal-title">Looking For BPO Partner</h4>
       </div>
       <div class="modal-body">
-        <?php echo do_shortcode("[contact-form-7 id=\"33\" title=\"BPO-Partner-Form\"]")?>
+        <?php echo do_shortcode("[contact-form-7 id=\"58\" title=\"BPO-Partner-Form\"]")?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -89,7 +93,7 @@ get_header(); ?>
         <h4 class="modal-title">Looking For Consulting Opportunity</h4>
       </div>
       <div class="modal-body">
-        <?php echo do_shortcode("[contact-form-7 id=\"34\" title=\"Consulting-Opportunity-Form\"]")?>
+        <?php echo do_shortcode("[contact-form-7 id=\"60\" title=\"Consulting-Opportunity-Form\"]")?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -98,8 +102,8 @@ get_header(); ?>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-<div class="modal fade" id="subscribeModal">
+		
+		<div class="modal fade" id="subscribeModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -129,7 +133,9 @@ get_header(); ?>
 	</div><!-- #primary -->
 <script type="text/javascript">
 <!--
-
+	function hello(){
+		alert("hello dude");
+	}
 
 	$(document).ready(function(){
 		$('#consultingopplink').click(function() {
@@ -168,6 +174,7 @@ get_header(); ?>
 			
 		});
 
+
 		$('#signuplink').click(function(){
 			$('html').css('overflow-y', 'hidden');
 			$('html').css('margin-right', '15px');
@@ -179,8 +186,6 @@ get_header(); ?>
 			$('html').css('overflow-y', 'auto');
 			
 		});
-		
-		
 	});
 //-->
 </script>

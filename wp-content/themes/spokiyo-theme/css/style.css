@@ -405,9 +405,9 @@ ul.sortable-list li {margin:0; padding:0;}
 .home-logo { position: relative; float: left;}
 
 .prevent-vscroll { overflow-y: hidden !important; }
-.home-button-container { text-align: center; margin: 0 auto; width: 780px;}
-.home-button-container h4 { text-align: left; text-indent: 10px;margin-bottom: 10px; }
+/*.home-button-container { text-align: center; margin: 0 auto; width: 780px;}*/
+.looking-for h4 { text-align: left; text-indent: 10px;margin-bottom: 10px; }
 .contact-label { font-weight: 600; }
 #contactnametext,#organizationtext,#contactemailaddresstext,#contactphonenumber { width: 400px; }
-#consultingneedstext,#bponeedstext,#yourmessagetext { width: 500px; }
+#consultingneedstext,#bponeedstext { width: 500px; }
 .img-inline { display: inline; margin: 0 10px 0 10px; }

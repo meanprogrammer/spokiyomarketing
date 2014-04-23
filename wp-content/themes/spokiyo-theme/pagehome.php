@@ -31,16 +31,37 @@ get_header(); ?>
                 <a href="#"><button class="default-bg rounded" type="button" data-toggle="modal" data-target="#signupModal">Sign Up Now</button></a>
             </div> -->
 
-           
+           	<div class="row" style="text-align: center; margin: 0 auto;">
+           	<div class="col-md-3">
+           	</div>
+           		<div class="col-md-6">
+           			<a class="btn btn-default btn-lg btn-block" id="signuplink">Sign Up For Newsletter</a>
+           		</div>	
+           	</div>
 		    <div class="row" style="text-align: center; margin: 0 auto;">
-		    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		    	<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-6" style="margin-top:10px;">
+							<a class="btn btn-spokiyo btn-lg btn-block" id="consultantslink">Need Consultants</a>
+						</div>
+					</div>		    
+					<div class="row">
+						<div class="col-md-6 col-md-offset-6" style="margin-top:10px;">
+							<a class="btn btn-spokiyo btn-lg btn-block" id="bpopartnerlink">Need BPO Partner</a>
+						</div>
+					</div>			
+		    	</div>
+		    	<div class="col-md-3" style="margin-top:10px;">
+		    		<a class="btn btn-danger btn-lg btn-block big-button" id="consultingopplink">Consultant Registration</a>
+		    	</div>
+		    	 <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					  	<a class="btn btn-default btn-lg" id="consultantslink">Consultants</a>
 						<a class="btn btn-default btn-lg" id="bpopartnerlink">BPO Partner</a>
-						<a class="btn btn-default btn-lg" id="consultingopplink">Consulting Opportunity</a>
+						<a class="btn btn-default btn-lg" id="consultingopplink">Consulting Opportunities</a> -->
 						<!--  <img class="img-responsive img-inline" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/vert-line.png" /> -->
 						<!--  <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">Sign Up For Newsletter</a>-->
-						<a class="btn btn-primary btn-lg" id="signuplink">Sign Up For Newsletter</a>
-				</div>		
+						<!-- <a class="btn btn-primary btn-lg" id="signuplink">Sign Up For Newsletter</a>
+				</div> 		 -->
 			</div>
 			<div class="row hero-image">
 	            <!-- <div class="hero-image"> -->
@@ -90,7 +111,7 @@ get_header(); ?>
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Looking For Consulting Opportunity</h4>
+        <h4 class="modal-title">Looking For Consulting Opportunities</h4>
       </div>
       <div class="modal-body">
         <?php echo do_shortcode("[contact-form-7 id=\"60\" title=\"Consulting-Opportunity-Form\"]")?>

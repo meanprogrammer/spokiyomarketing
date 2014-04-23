@@ -411,3 +411,24 @@ ul.sortable-list li {margin:0; padding:0;}
 #contactnametext,#organizationtext,#contactemailaddresstext,#contactphonenumber { width: 400px; }
 #consultingneedstext,#bponeedstext { width: 500px; }
 .img-inline { display: inline; margin: 0 10px 0 10px; }
+.big-button { height: 100px; padding-top:35px; }
+
+.btn-spokiyo {
+  color: #ffffff;
+  background-color: #009fe3;
+  border-color: #0092d1;
+}
+.btn-spokiyo:hover,
+.btn-spokiyo:focus,
+.btn-spokiyo:active,
+.btn-spokiyo.active,
+.open .dropdown-toggle.btn-spokiyo {
+  color: #ffffff;
+  background-color: #008bc7;
+  border-color: #0092d1;
+}
+.btn-spokiyo:active,
+.btn-spokiyo.active,
+.open .dropdown-toggle.btn-spokiyo {
+  background-image: none;
+}

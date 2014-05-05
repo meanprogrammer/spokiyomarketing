@@ -2814,8 +2814,8 @@ footer.entry-meta {
 
 	.toggled-on .nav-menu li a:hover,
 	.toggled-on .nav-menu ul a:hover {
-		background-color: #db572f;
-		color: #fff;
+		background-color: #fff;
+		color: #428BCA;
 	}
 
 	ul.nav-menu,

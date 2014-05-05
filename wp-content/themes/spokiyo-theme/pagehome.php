@@ -24,30 +24,42 @@ get_header(); ?>
 		<div id="content" class="site-content container" role="main">
 		        <div class="banner">
 		        <br />
-            <h1 class="home-h1">Work-Life Balanced</h1>
-            <p class="home-intro">We assist in improving the quality of life of highly skilled individuals and the quality of work for clients by providing them an innovative platform that is easy to use</p>
+            <h1 class="home-h1">COMPETITIVE CONSULTING - SOLID EXPERIENCE</h1>
+            <p class="home-intro">SPOKIYO has hundreds of consultants in our matching system available at short notice and at reasonable rates - up to a third of the cost of other consulting companies. Our consultants are happier too!
+Find out more by requesting more information below.</p>
             <!-- <div class="button-group">
                 <a href="#"><button class="gray-bg rounded" style="margin-right:10px;" type="button" data-toggle="modal" data-target="#videoModal">Watch Video</button></a>
                 <a href="#"><button class="default-bg rounded" type="button" data-toggle="modal" data-target="#signupModal">Sign Up Now</button></a>
             </div> -->
-
-           	<div class="row" style="text-align: center; margin: 0 auto;">
+			
+           	<!-- <div class="row" style="text-align: center; margin: 0 auto;">
            	<div class="col-md-3">
            	</div>
            		<div class="col-md-6">
-           			<a class="btn btn-default btn-lg btn-block" id="signuplink">Sign Up For Newsletter</a>
+           			<a class="btn btn-default btn-lg btn-block" id="signuplink">Sign Up For The Spokiyo Newsletter</a>
            		</div>	
-           	</div>
+           	</div> -->
+           	
+           				 <div class="row"  style="text-align: center; margin: 0 auto;margin-top:10px;">
+				<div class="col-md-6 col-md-offset-3">
+				    <div class="input-group">
+				      <input id="emailaddresstext" name="emailaddresstext" type="text" class="form-control input-lg input-md" placeholder="Email Address">
+				      <span class="input-group-btn">
+				        <a id="signuplink2" class="btn btn-primary btn-lg btn-md">Sign up to Newsletter</a>
+				      </span>
+				    </div>
+				</div>
+			</div> 
 		    <div class="row" style="text-align: center; margin: 0 auto;">
 		    	<div class="col-md-6">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-6" style="margin-top:10px;">
-							<a class="btn btn-spokiyo btn-lg btn-block" id="consultantslink">Need Consultants</a>
+							<a class="btn btn-spokiyo btn-lg btn-block" id="consultantslink">Request a Quote</a>
 						</div>
 					</div>		    
 					<div class="row">
 						<div class="col-md-6 col-md-offset-6" style="margin-top:10px;">
-							<a class="btn btn-spokiyo btn-lg btn-block" id="bpopartnerlink">Need BPO Partner</a>
+							<a class="btn btn-spokiyo btn-lg btn-block" id="bpopartnerlink">BPO Information</a>
 						</div>
 					</div>			
 		    	</div>
@@ -63,9 +75,10 @@ get_header(); ?>
 						<!-- <a class="btn btn-primary btn-lg" id="signuplink">Sign Up For Newsletter</a>
 				</div> 		 -->
 			</div>
+
 			<div class="row hero-image">
 	            <!-- <div class="hero-image"> -->
-	                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/banner-hero.png" />
+	                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/banner-hero-900x401.png" />
 	            <!-- </div> -->
             </div>
         </div><!--end of banner-->
@@ -206,6 +219,33 @@ get_header(); ?>
 			$('html').css('margin-right', '0');
 			$('html').css('overflow-y', 'auto');
 			
+		});
+
+		$('#signuplink2').click(function(){
+			
+			var email = $('#emailaddresstext').val();
+			if(email == ''){
+				alert('Please enter your email address.');
+				return;
+			}
+			$('#signuplink2').attr('disabled','disabled');
+			 $.ajax({
+			        url: '<?php echo get_template_directory_uri(); ?>/ajax.php',
+			        type: "post",
+			        data: { "email" : email },
+			        error: function() {
+			            alert('detail ajax call error.');
+			        },
+			        success: function(data) {
+				        if(data.length > 0) {
+			        		$('#signuplink2').removeAttr('disabled');
+			        			alert('You have been subscribed to Spokiyo Newsletter. Thank you.');
+			        		$('#emailaddresstext').val('');
+				        }
+			        	//window.location.href="sign-up-complete/";
+			        }
+			    });
+						
 		});
 	});
 //-->

@@ -8,7 +8,7 @@ body{background-color:#f6f6f6;}
 /*---Home registration--*/
 #home-header {margin:30px 0 30px 0;} 
 .home-nav a {font-weight:600;}
-.home-h1 {text-transform:uppercase; color:#4e4e4e; font-size:48px; font-weight:600; text-align:center; margin-bottom:0px;margin-top: 0px;}
+.home-h1 {text-transform:uppercase; color:#4e4e4e; font-size:40px; font-weight:600; text-align:center; margin-bottom:0px;margin-top: 0px;}
 .home-intro {display:block; margin:0 auto 20px; width:65%; color:#7e7e7e; font-size:18px; text-align: center;}
 .hero-image {padding:20px 0;}
 .hero-image img { margin:0 auto;}
@@ -401,7 +401,7 @@ ul.sortable-list li {margin:0; padding:0;}
 
 .button-group { text-align: center; }
 
-.nav-menu { background-color: #FFF; text-align: right; }
+.nav-menu { /*background-color: #FFF;*/ text-align: right; }
 .home-logo { position: relative; float: left;}
 
 .prevent-vscroll { overflow-y: hidden !important; }
@@ -432,3 +432,5 @@ ul.sortable-list li {margin:0; padding:0;}
 .open .dropdown-toggle.btn-spokiyo {
   background-image: none;
 }
+
+.form-textarea-width { width: 400px !important;}

@@ -54,7 +54,7 @@ body{background-color:#f6f6f6;}
 	#global-header nav ul ul li a {color:#fff;}
 	#global-header nav ul ul li:hover {background:#009fe3;}
 	
-	nav ul li{margin-bottom:0;}
+	/*nav ul li{margin-bottom:0;}
 	nav ul ul {display: none;}
 		nav ul li:hover > ul {display: block;}
 	
@@ -71,7 +71,7 @@ body{background-color:#f6f6f6;}
 				
 			nav ul ul li {float: none; display:block;}
 				nav ul ul li a {color: #fff; height:30px; line-height:30px;}	
-					nav ul ul li a:hover {background: #009fe3; color:#ffffff;}
+					nav ul ul li a:hover {background: #009fe3; color:#ffffff;}*/
 					
 	#global-header nav ul ul li {float:none; display:block; padding:0; margin:0;}
 	#global-header nav ul ul li a {background: #009fe3; height:30px; line-height:30px; display:block; width:130px; padding:0 0 0 40px;}
@@ -382,7 +382,7 @@ ul.sortable-list li {margin:0; padding:0;}
 .connection-item { float:left;width:100px;margin-right:20px;height:150px; }
 .connection-item span { margin-top:5px; }
 
-.take-test-box { border:1px dashed #48aff0; margin:20px;padding:15px;border-radius:8px;color:#FFF; }
+
 .take-test-link { color:#94d3fa;text-decoration:underline; }
 .consultant-quick-profile { padding:15px;height:80px;border-bottom:1px solid #ddd; }
 .consultant-info-list { list-style:none; margin-left:20px; }
@@ -400,8 +400,7 @@ ul.sortable-list li {margin:0; padding:0;}
 .consultant-box-hover a:first-child { margin-bottom:10px; }
 
 .button-group { text-align: center; }
-
-.nav-menu { /*background-color: #FFF;*/ text-align: right; }
+.nav-menu { text-align: right;float:right; }
 .home-logo { position: relative; float: left;}
 
 .prevent-vscroll { overflow-y: hidden !important; }
@@ -434,3 +433,15 @@ ul.sortable-list li {margin:0; padding:0;}
 }
 
 .form-textarea-width { width: 400px !important;}
+.full-width { width: 100% !important; }
+.form-group {
+    margin-bottom: 0px !important;
+}
+/*input[type="text"], input[type="password"], input[type="email"], textarea, select {
+	margin:0 0 5px !important;
+}*/
+.input-margin-override { margin:0 0 5px !important; }
+.for-label { display: inline; margin-right:20px; }
+.width-80 { width:80% !important; }
+.show-inline { display:inline !important; }
+.align-right { text-align:right !important; }

@@ -192,8 +192,10 @@
 ================================================== */
 .socialbar{width:100%;min-height:40px;padding:0;font-size:0;z-index:999;background:#FFFFFF}
 .socialbar:after{clear:left;content:" "}
-.socialbar_transparent{width:100%;min-height:40px;padding:0;font-size:0;z-index:999}
+.socialbar_transparent{display:inline-block;min-height:40px;padding:0;font-size:0;z-index:999;float:right;}
+.socialbar_transparent2{width:100%;min-height:40px;padding:0;font-size:0;z-index:999}
 .socialbar_transparent:after{clear:left;content:" "}
+.socialbar_transparent2:after{clear:left;content:" "}
 .borderless li{border:none!important}
 .borderless li:first-child{border:none!important}
 ul.borderless li{border:none!important}

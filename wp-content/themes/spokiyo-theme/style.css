@@ -879,13 +879,13 @@ ul.nav-menu li:hover > ul,
 	display: none;
 }
 
-/* Navbar */
+/* Navbar 
 .navbar {
 	background-color: #fff;
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
-}
+}*/
 
 .site-header .search-form {
 	position: absolute;

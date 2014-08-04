@@ -29,9 +29,13 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
 	<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet" media="screen"> 
 	<link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet" media="screen">
+	<link href="<?php echo get_template_directory_uri(); ?>/css/spokiyo-app.css" rel="stylesheet" media="screen">
 	<link href="<?php echo get_template_directory_uri(); ?>/css/socialsprites.css" rel="stylesheet" media="screen">
+	<link href="<?php echo get_template_directory_uri(); ?>/css/datepicker.css" rel="stylesheet" media="screen">
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/json2.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>	
+	<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap-datepicker.js"></script>
 	<!-- END: Added CSS from the original -->
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
@@ -44,7 +48,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header container" role="banner">
 			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
@@ -53,23 +57,32 @@
 			<div id="navbar" class="navbar">
 				
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-					<div class="row container">
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="padding-left:5px !important;padding-right:5px !important;">
+					<div class="row">
+						<div class="col-lg-2 col-md-2" style="padding-left:5px !important;padding-right:5px !important;">
 							<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
 							<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/home-logo.png" class="home-logo img-responsive">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/home-logo.png" class="home-logo">
 						</div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-left:5px !important;padding-right:5px !important;">
-							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+						<div class="col-lg-10 col-md-10" style="padding-left:5px !important;padding-right:5px !important;">
+							
 							<!-- Removed Search form here -->
 							<?php //get_search_form(); ?>
+							<div class="socialbar_transparent borderless visible-lg visible-md visible-sm">
+				            		<ul style="text-align:right" class="ss sscircle">
+										<li class="facebook"><a href="https://facebook.com/spokiyo" target="_blank">facebook</a></li>		
+										<li class="linkedin"><a href="http://www.linkedin.com/groups/SPOKIYO-4246125/about" target="_blank">linkedin</a></li>
+										<li class="twitter"><a href="https://twitter.com/spokiyo" target="_blank">twitter</a></li>
+									</ul>
+							</div>
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 						</div>
-						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-								<!-- <a href="https://facebook.com/spokiyo"><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/facebook-icon.png"></a>
-			            		<a href="http://www.linkedin.com/groups/SPOKIYO-4246125/about"><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/linkedin-icon.png"></a>
-			            		<a href="https://twitter.com/spokiyo"><img src="<?php echo get_template_directory_uri(); ?>/images/spokiyo/twitter-icon.png"></a>
-			            		 -->
-			            		<div class="socialbar_transparent borderless">
+					 <!--<div class="col-lg-2 col-md-2">
+			            		
+		            	</div> -->
+					</div>
+					 <div class="row visible-xs center">
+						<div class="col-lg-12 visible-xs" >
+			            		<div class="socialbar_transparent2 borderless">
 				            		<ul style="text-align:right" class="ss sscircle">
 										<li class="facebook"><a href="https://facebook.com/spokiyo" target="_blank">facebook</a></li>		
 										<li class="linkedin"><a href="http://www.linkedin.com/groups/SPOKIYO-4246125/about" target="_blank">linkedin</a></li>
@@ -77,9 +90,9 @@
 									</ul>
 								</div>
 		            	</div>
-					</div>
+					</div> 
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
 
-		<div id="main" class="site-main">
+		<div id="main" class="site-main container">

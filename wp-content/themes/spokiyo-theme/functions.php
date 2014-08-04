@@ -546,3 +546,16 @@ function twentythirteen_customize_preview_js() {
 	wp_enqueue_script( 'twentythirteen-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
+
+// Register the script first.
+wp_register_script( 'requiredurls', get_template_directory_uri() . '/js/functions.js' );
+
+// Now we can localize the script with our data.
+$translation_array = array( 
+	'wp_template_uri' => __( get_template_directory_uri() ),
+	'wp_full_site_uri' => __( get_site_url() ) 
+);
+wp_localize_script( 'requiredurls', 'wp_urls', $translation_array );
+
+// The script can be enqueued now or later.
+wp_enqueue_script( 'requiredurls' );

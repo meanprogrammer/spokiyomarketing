@@ -1,0 +1,135 @@
+.required-label {
+	color: #FF0000;
+}
+
+.form-group-override {
+	margin-left:0 !important;
+}
+
+.form-group-override-negate {
+	margin-left:15px !important;
+}
+
+#validation-messages {
+	border-radius: 5px !important;
+	margin-top:0px !important;
+}
+
+#validation-messages ul {
+	margin-top: 0px;
+}
+
+.datepicker {
+	width:300px !important;
+}
+
+.has-error input[type=checkbox] {
+  outline: 1px solid #FF0000;
+}
+
+.agree-checkbox {
+	padding: 5px;
+}
+
+.agree-checkbox-invalid {
+	outline: 2px solid #b94a48;
+}
+
+.consultant-name {
+	font-size:24px;
+	font-weight: 600;
+	margin-left: 0px !important;
+	color: #000;
+}
+
+.control-label {
+	color:#727272; text-transform:uppercase; font-weight:normal;
+}
+
+.modal-body-override {
+	padding-top:0px !important;
+}
+
+.vertical-divider {
+	border-left: solid 1px #d7d7d7;
+}
+.tab-pane-override {
+	/*margin-top: 10px;*/
+	padding:20px;
+}
+.panel-body-override {
+	padding: 0px !important;
+}
+.nav-override {
+	padding-left: 12px !important;
+}
+.contact-item {
+	background-color: #0093ef;
+	padding: 10px;
+	color: #fff;
+}
+.contacts-container {
+	background-color: #0093ef;
+}
+	.contacts-container ul {
+		background-color: #0093ef;
+		padding: 10px;
+		color: #fff;
+		margin-top: 0;
+		margin-bottom: 0;
+		list-style: none;
+	}
+	.contacts-container ul li {
+		padding: 5px;
+		text-indent: 20px;
+	}
+
+
+.contactinfo-edit-button {
+	display:inline; float: right; margin-top: 6px;
+}
+.attribute-title {
+	color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding:10px 10px 0;	
+}
+.att-skills {
+    background: url("../images/spokiyo/icon-skills.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color:#fff;
+}
+.att-interests {padding-left:20px; background:url(../images/spokiyo/icon-interests.png) no-repeat;color:#fff;}
+.att-personality {padding-left:20px; background:url(../images/spokiyo/icon-personality.png) no-repeat;color:#fff;}
+.take-test-box { border:1px dashed #48aff0; margin-bottom:20px;margin-top:20px;padding:15px;border-radius:8px;color:#FFF; }
+.table-override td { padding: 4px !important; border-top:0 !important; }
+.table-override { border-bottom:0 !important; margin-left: 20px; }
+.datepicker { z-index:1151; }
+.table-no-topborder { border-top:0 !important; }
+.table-no-topborder td { border-top:0 !important; }
+.shadow-override { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) !important; }
+.profile-picture-back { background-color: #2a363a;padding: 10px; text-align: center; }
+
+/* experience */
+#employmenthistory, #educationhistory, #bankaccount-list { margin-top: 10px; }
+.experience-role,.education-qualification { padding: 5px; font-size: 16px; font-weight: 600; }
+.experience-company,.education-school { padding: 5px; text-transform: uppercase; }
+.experience-details,.education-details { margin-bottom: 10px; }
+.experience-dates,.education-dates { text-align: right; }
+.icon { width:16px;    padding: 5px 5px 5px 18px !important; }
+.twitter-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -1px 4px rgba(0, 0, 0, 0); }
+.email-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -119px 4px rgba(0, 0, 0, 0); }
+.website-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -163px 4px rgba(0, 0, 0, 0); }
+.contact-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -142px 4px rgba(0, 0, 0, 0); }
+.fb-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -233px 4px rgba(0, 0, 0, 0); }
+.linkedin-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -212px 8px rgba(0, 0, 0, 0); }
+.gplus-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -256px 4px rgba(0, 0, 0, 0); }
+.msn-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -24px 3px rgba(0, 0, 0, 0); }
+.ym-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -48px 4px rgba(0, 0, 0, 0); }
+.gtalk-icon { background:url("../images/spokiyo/sm-icons.png") no-repeat scroll -72px 4px rgba(0, 0, 0, 0); }
+.viber-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -93px 4px rgba(0, 0, 0, 0); }
+.whatsup-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -186px 4px rgba(0, 0, 0, 0); }
+.skype-icon { background: url("../images/spokiyo/sm-icons.png") no-repeat scroll -278px 4px rgba(0, 0, 0, 0); }
+
+
+.navbar-override { border-radius:0px !important;margin-bottom: 0px !important; }
+.searchbox { padding: 10px 10px 10px 25px; text-align: left; }
